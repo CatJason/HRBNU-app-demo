@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usr_bg_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorRed" />
+
+            <TextView
+                android:id="@+id/usr_bg_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usr_imfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <com.example.jason.mxlake.paint.XCRoundImageView
+                android:id="@+id/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/avatar" />
+        </LinearLayout>
+
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/local_file"
+                android:layout_height="56dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/file"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="本机文件"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorGray"/>
+
+
+            <LinearLayout
+                android:layout_height="56dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/love"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="我的收藏"/>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorGray"/>
+
+
+            <LinearLayout
+                android:layout_height="56dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/history"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="浏览历史"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorGray" />
+
+
+        <LinearLayout
+            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/cloud"/>
+
+            <TextView
+                android:id="@+id/mx_cloud"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="梦溪云"/>
+        </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorGray" />
+
+            <LinearLayout
+                android:id="@+id/email"
+                android:layout_height="56dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/email"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="邮箱"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorGray"
+                android:visibility="gone"/>
+
+
+            <Button
+                android:id="@+id/btn_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第二个显示信息"/>
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第三个显示信息"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第四个显示信息"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

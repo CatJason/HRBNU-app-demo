@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/news_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/news_usrname"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@id/news_avatar"/>
+
+    <TextView
+        android:id="@+id/news_time"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="right"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@id/news_avatar"/>
+
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/news_time"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@id/news_avatar"/>
+    <LinearLayout
+        android:id="@+id/tags"
+        android:orientation="horizontal"
+        android:layout_height="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/news_title"
+        android:layout_toRightOf="@id/news_avatar">
+
+        <TextView
+            android:id="@+id/tag1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FF4081"/>
+        <TextView
+            android:id="@+id/tag2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FF4081"/>
+        <TextView
+            android:id="@+id/tag3"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FF4081"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ly_news_place"
+        android:layout_height="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/news_avatar"
+        android:layout_below="@id/tags">
+        <ImageView
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:layout_toLeftOf="@id/news_place"
+            android:src="@drawable/place_img"/>
+        <TextView
+            android:id="@+id/news_place"
+            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="哈尔滨师范大学"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/ly_news_place"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGray" />
+
+</RelativeLayout>

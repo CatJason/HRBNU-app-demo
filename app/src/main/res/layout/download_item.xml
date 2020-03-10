@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/downloader"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+        <RelativeLayout
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/downloader_btn"
+            android:layout_alignParentRight="true"
+            >
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@color/colorWhite"
+                android:id="@+id/btndown"
+                android:src="@drawable/start_download"
+                android:text="下载"/>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@color/colorWhite"
+                android:id="@+id/btnstop"
+                android:text="停止"
+                android:src="@drawable/stop_download"/>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@color/colorWhite"
+                android:id="@+id/btndeltest"
+                android:text="停止"
+                android:src="@drawable/stop_download"
+                android:visibility="gone"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/downFileInfo"
+            android:layout_height="36dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/downloader_btn"
+            android:background="@color/colorWhite"
+            android:text="下载文件名"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progressBar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+
+        android:id="@+id/textresult"
+        android:textColor="@color/colorWhite"
+        android:text="显示实时下载的百分比"/>
+
+</LinearLayout>

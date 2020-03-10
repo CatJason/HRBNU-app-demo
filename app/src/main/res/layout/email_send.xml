@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <ImageView
+        android:id="@+id/btnSENDback"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/back"
+        android:layout_marginLeft="5dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:text="新建邮件"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/btnSEND"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/send_email"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:" />
+
+        <EditText
+            android:id="@+id/txtToAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject:" />
+
+        <EditText
+            android:id="@+id/txtSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content:" />
+
+    <EditText
+        android:id="@+id/txtContent"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="top"/>
+
+
+</LinearLayout>

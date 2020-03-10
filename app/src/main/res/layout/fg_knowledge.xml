@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/library"
+    android:scaleType="centerCrop">
+
+            <Button
+                android:id="@+id/knowledge_refresh"
+                android:text="首页"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:background="#70ffffff"
+                android:layout_height="32dp" />
+        <ScrollView
+            android:layout_below="@id/knowledge_refresh"
+            android:layout_above="@id/knowledge_pages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/file_system"
+                    android:orientation="vertical">
+        </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    <LinearLayout
+        android:id="@+id/knowledge_pages"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:alpha="0.5"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp">
+        <Button
+            android:id="@+id/uppage"
+            android:text="上一页"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/sumpage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/setpage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/jumppage"
+            android:text="转跳"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/nextpage"
+            android:text="下一页"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

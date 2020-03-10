@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/campusFragment">
+
+
+    <com.example.jason.mxlake.main.view.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/campus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/campus"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/GridLayoutMap"
+                android:columnCount="4"
+                android:orientation="horizontal"
+                android:background="#eeeeee"
+                android:alignmentMode="alignMargins"
+                android:visibility="gone">
+
+
+                <Button android:text="行知楼"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:id="@+id/GLMItemA1"
+                    android:layout_columnWeight="1">
+                </Button>
+
+
+                <Button android:text="理工楼"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:id="@+id/GLMItemA2"
+                    android:layout_columnWeight="1"/>
+
+                <Button android:text="人文楼"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:id="@+id/GLMItemA3"
+                    android:layout_columnWeight="1"/>
+
+                <Button android:text="社科楼"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:id="@+id/GLMItemA4"
+                    android:layout_columnWeight="1"/>
+
+                <Button android:text="体育楼"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:id="@+id/GLMItemA5"
+                    android:layout_columnWeight="1"/>
+
+                <Button android:text="崇师楼"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:id="@+id/GLMItemA6"
+                    android:layout_columnWeight="1"/>
+
+                <Button android:text="图书馆"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:id="@+id/GLMItemA7"
+                    android:layout_columnWeight="1"/>
+
+                <Button
+                    android:text="more"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:id="@+id/GLMItemA8"
+                    android:layout_columnWeight="1"/>
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/btn_buildings"
+                android:layout_width="match_parent"
+                android:background="#eeeeee"
+                android:gravity="center|top"
+                android:textColor="@color/colorBlack"
+                android:text=". . ."
+                android:textStyle="bold"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:textStyle="bold"
+                android:background="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/title_news_hots"
+                    android:text="校园十大"
+                    android:elevation="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/camp_hots"
+                android:orientation="vertical"/>
+                <TextView
+                    android:id="@+id/more"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="more"
+                    android:textStyle="bold"
+                    android:background="#eeeeee"
+                    android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:textStyle="bold"
+                android:background="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/textViewNews"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="校园微动态"
+            android:textSize="30dp"
+            android:elevation="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/title_news"/>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ly_news"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</com.example.jason.mxlake.main.view.PullToRefreshView>
+
+</LinearLayout>
